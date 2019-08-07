@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+	Name: Elaine Daniels
+	Date Created: 7/19/2019
+	Most recent revision: 8/7/2019
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		
+		<link rel="stylesheet"
+				type="text/css"
+				href="restaurantStyles.css" />
+	</head>
+	
+	<body>
+		<header class="jumbotron">
+			<h1>Grog & Kiki's Snak Korner</h1>
+			<h2 class="font-italic" style="padding-top: 20px; text-align: center; color: red;">Soon opening a new location!</h2>
+			<h4 class="font-italic" style="padding top: 40px; text-align: center;">Now dog free!</h4>
+		
+		</header>
+	<hr />
+		<nav>
+		<a class="btn badge-pill" href="home.html" style="font-family: Webdings;">H</a> 
+		<a class="btn badge-pill" href="menu.html">Menu</a> 
+		<a class="btn badge-pill" href="contact.html">Contact Us</a>
+		<div class="clear-float"></div>
+		</nav>
+	<hr />
+	<p>* = Required Field</p>
+	<form name="contactForm">
+		
+		<b>*Name: </b><input type="text" name="nameBox" id="nameInput" required /> <br />
+		<b>*Email: </b><input type="text" name="emailBox" id="emailInput" required /> <br />
+		<b>*Phone Number: </b><input type="text" name="phonenumberBox" id="phoneNumberInput" required /> <br /> <br />
+		<b>*Reason for Inquiry: </b>
+			<select name="Reason for Inquiry" id="inquiryInput" required>
+				<option value="Catering">Catering</option>
+				<option value="Private Party">Private Party</option>
+				<option value="Feedback">Feedback</option>
+				<option value="Other">Other</option>
+			</select>
+			<br /> <br />
+		<b>Additional Information: </b>
+			<textarea name="myTextArea">
+			</textarea>
+			<br /> <br />
+		<b>Have you been to the restaurant?</b>
+			<input type="radio" name="answer" value="No" />No 
+			<input type="radio" name="answer" value="Yes" />Yes <br />
+			<br />
+		<b>*What is the best day to contact you?</b> <br />
+			<input type="checkbox" name="dayChoices" value="Mon" />Mon  
+			<input type="checkbox" name="dayChoices" value="Tue" />Tue  
+			<input type="checkbox" name="dayChoices" value="Wed" />Wed  
+			<input type="checkbox" name="dayChoices" value="Thu" />Thu  
+			<input type="checkbox" name="dayChoices" value="Fri" />Fri  
+			
+			<br /> <br />
+			<button type="button" name="submit" onclick="validateItems()">Submit</button>
+		
+		
+		
+		
+	</form>
+		<footer>
+	<hr />
+		<p>1337 Zoomie Blvd, Beanburg, KT, 64209</p>
+		<p>024-426-2228 (024-IAM-ACAT)
+	<hr />
+		</footer>
+		
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="restaurantScript.js"></script>
+	
+		<noscript>
+			<div style="border: 1px solid purple; padding: 10px">
+				<span style="color:red">JavaScript is not enabled! This site is best viewed when JavaScript is enabled.</span>
+			</div>
+		</noscript>
+		
+	</body>
+
+
+
+
+</html>
